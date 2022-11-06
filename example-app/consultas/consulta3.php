@@ -20,8 +20,8 @@
   ?>
 <style>
   table, th, td {border:1px solid black;}
-  th{text-align: center;} 
-  td{text-align: justify;}
+  th{text-align: center;}
+  td{text-align: left;}
   tr:nth-child(even) {background-color: #D6EEEE;}
 </style>
 
