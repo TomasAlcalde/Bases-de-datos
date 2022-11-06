@@ -2,11 +2,11 @@
 
 <body>
   <h1 align="center"> Eventos 22 </h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre pokemones.</p>
+  <p style="text-align:center;">Aquí podrás encontrar información sobre los eventos disponibles.</p>
 
   <br>
 
-  <h3 align="center"> ¿Quieres buscar un Pokemón por tipo y/o nombre?</h3>
+  <h3 align="center"> ¿Quieres ver el nombre y contacto de las productoras?</h3>
 
   <form align="center" action="consultas/consulta1.php" method="post">
     <br/>
@@ -17,12 +17,10 @@
   <br>
   <br>
 
-  <h3 align="center"> ¿Quieres buscar un Pokemón por su ID?</h3>
+  <h3 align="center"> ¿Quieres ver cuántos eventos hizo cada productora?</h3>
 
-  <form align="center" action="consultas/consulta_stats.php" method="post">
-    Id:
-    <input type="text" name="id_elegido">
-    <br/><br/>
+  <form align="center" action="consultas/consulta2.php" method="post">
+    <br/>
     <input type="submit" value="Buscar">
   </form>
   
