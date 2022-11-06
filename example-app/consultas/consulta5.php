@@ -9,7 +9,7 @@
   $query = "SELECT I.Nombre_evento, I.Ingreso FROM (SELECT Ent.Nombre_evento, SUM(Ing.precio) as Ingreso
             FROM Entradas as Ent LEFT OUTER JOIN Precios as Ing
             ON Ent.Nombre_Evento = Ing.Nombre_Evento and Ent.categoria = Ing.categoria and Ent.tipo = Ing.tipo
-            GROUP BY Ent.Nombre_Evento) as I WHERE I.Nombre_Evento ilike '$var'+'%';";
+            GROUP BY Ent.Nombre_Evento) as I WHERE I.Nombre_Evento ilike '$var%';";
   $result = $db -> prepare($query);
   $result -> execute();
   $dataCollected = $result -> fetchAll(); #Obtiene todos los resultados de la consulta en forma de un arreglo
