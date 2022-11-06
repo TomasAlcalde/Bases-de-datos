@@ -14,7 +14,7 @@ id_recinto,Nombre,Ciudad
 13,Qudos Bank Arena,SYDNEY
 14,FTX Arena,MIAMI
 15,Carrer Baix Vinalopo,MISLATA
-16,Teatro Caupolicán,SANTIAGO
+16,Teatro Caupolican,SANTIAGO
 17,Teatro Mayor ,BOGOTA
 18,Sala Cool Madrid,MADRID
 19,Dodger Stadium,LOS ANGELES
@@ -31,7 +31,7 @@ id_recinto,Nombre,Ciudad
 30,Crypto.com Arena,LOS ANGELES
 31,Club RBX,SANTIAGO
 32,Freiheitshalle,MUNICH
-33,Fundo Colmito,VIÑA DEL MAR
+33,Fundo Colmito,VINA DEL MAR
 34,Pabellon Fuente de San Luis,VALENCIA
 35,Club Chocolate,SANTIAGO
 36,Porto Alegre,PORTO ALEGRE
@@ -69,7 +69,7 @@ id_recinto,Nombre,Ciudad
 68,UBS Arena,NUEVA YORK
 69,Teatro Gran Rex,BUENOS AIRES
 70,Thunder Bay,ONTARIO
-71,Stage Live, Kalea,BILBAO
+71,Stage Live Kalea,BILBAO
 72,Bikini Barcelona,BARCELONA
 73,Opera de Sidney,SYDNEY
 74,Youtube Theatre,LOS ANGELES
@@ -100,10 +100,10 @@ id_recinto,Nombre,Ciudad
 99,Canadian Tire Centre,OTTAWA
 100,Razzmatazz,BARCELONA
 101,Sala Apolo,BARCELONA
-102,Casino de Viña del Mar,VIÑA DEL MAR
+102,Casino de Vina del Mar,VINA DEL MAR
 103,Canada Tire Centre,ONTARIO
 104,Bleu Restaurant & Dancing,LOS ANGELES
-105,Quinta Vergara,VIÑA DEL MAR
+105,Quinta Vergara,VINA DEL MAR
 106,Estadio Rose Bowl,LOS ANGELES
 107,Forest National,FOREST
 108,Allianz Parque,SAO PAULO
@@ -127,7 +127,7 @@ id_recinto,Nombre,Ciudad
 126,Lanxess Arena,COLOGNE
 127,Movistar Arena Dg,CUNDINAMARCA
 128,Luna Park,BUENOS AIRES
-129,Teatro Teletón,SANTIAGO
+129,Teatro Teleton,SANTIAGO
 130,Carioca Club,SAO PAULO
 131,Espacio Riesco,SANTIAGO
 132,Kursaal Oostende,OSTEND
