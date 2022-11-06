@@ -14,11 +14,14 @@
 	$productoras = $result -> fetchAll();
   ?>
 
-  <table>
-    <tr>
-      <th>Nombre</th>
-      <th>Altura</th>
-    </tr>
+  <table class= "table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Altura</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead> 
   
       <?php
         // echo $productoras;
