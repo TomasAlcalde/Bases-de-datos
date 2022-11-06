@@ -31,22 +31,15 @@
 
   <h3 align="center"> ¿Quieres ver el último evento de una productora?</h3>
 
-  <form align="center" action="consultas/consulta3.php" method="post">
-    Nombre Productora:
-    <input type="text" name="Productora">
-    <br/><br/>
-    <input type="submit" value="Buscar">
-  </form>
-
   <?php
   #Primero obtenemos todos los tipos de pokemones
   require("config/conexion.php");
-  $result = $db -> prepare("SELECT * FROM Productoras;");
+  $result = $db -> prepare("SELECT * FROM Productoras ORDER BY Nombre;");
   $result -> execute();
   $dataCollected = $result -> fetchAll();
   ?>
     <form align="center" action="consultas/consulta3.php" method="post">
-      Seleccinar una productora:
+      Seleccine una productora:
       <select name="Productora">
         <?php
         #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -64,24 +57,45 @@
 
   <h3 align="center"> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
 
-  <form align="center" action="consultas/consulta4.php" method="post">
-    Nombre Productora:
-    <input type="text" name="Productora">
-    <br/><br/>
-    <input type="submit" value="Buscar">
-  </form>
+    <form align="center" action="consultas/consulta4.php" method="post">
+      Seleccine una productora:
+      <select name="Productora">
+        <?php
+        #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
+        foreach ($dataCollected as $d) {
+          echo "<option value=$d[1]>$d[1]</option>";
+        }
+        ?>
+      </select>
+      <br><br>
+      <input type="submit" value="Buscar">
+    </form>
   <br>
   <br>
   <br>
 
   <h3 align="center"> ¿Ver cuántos fueron los ingresos de un evento?</h3>
 
-  <form align="center" action="consultas/consulta5.php" method="post">
-    Nombre Evento:
-    <input type="text" name="Evento">
-    <br/><br/>
-    <input type="submit" value="Buscar">
-  </form>
+  <?php
+  #Primero obtenemos todos los tipos de pokemones
+  require("config/conexion.php");
+  $result = $db -> prepare("SELECT * FROM Eventos ORDER BY Nombre_evento;");
+  $result -> execute();
+  $dataCollected = $result -> fetchAll();
+  ?>
+    <form align="center" action="consultas/consulta5.php" method="post">
+      Seleccine una productora:
+      <select name="Evento">
+        <?php
+        #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
+        foreach ($dataCollected as $d) {
+          echo "<option value=$d[1]>$d[1]</option>";
+        }
+        ?>
+      </select>
+      <br><br>
+      <input type="submit" value="Buscar">
+    </form>
   <br>
   <br>
   <br>
