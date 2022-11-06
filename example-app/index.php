@@ -41,6 +41,18 @@
   <br>
   <br>
 
+  <h3 align="center"> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
+
+  <form align="center" action="consultas/consulta4.php" method="post">
+    Nombre Productora:
+    <input type="text" name="Productora">
+    <br/><br/>
+    <input type="submit" value="Buscar">
+  </form>
+  <br>
+  <br>
+  <br>
+
   <h3 align="center"> ¿Ver cuántos fueron los ingresos de un evento?</h3>
 
   <form align="center" action="consultas/consulta5.php" method="post">
