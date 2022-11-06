@@ -17,8 +17,8 @@
 
   <table>
     <tr>
-      <th>Nombre evento</th>
-      <th>Ingresos por venta de entradas</th>
+      <th>  Nombre evento  </th>
+      <th>  Ingresos por venta de entradas  </th>
     </tr>
   <?php
   foreach ($dataCollected as $p) {

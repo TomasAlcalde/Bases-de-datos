@@ -29,10 +29,22 @@
   <br>
   <br>
 
+  <h3 align="center"> ¿Quieres ver el último evento de una productora?</h3>
+
+  <form align="center" action="consultas/consulta5.php" method="post">
+    Nombre Productora:
+    <input type="text" name="Productora">
+    <br/><br/>
+    <input type="submit" value="Buscar">
+  </form>
+  <br>
+  <br>
+  <br>
+
   <h3 align="center"> ¿Ver cuántos fueron los ingresos de un evento?</h3>
 
   <form align="center" action="consultas/consulta5.php" method="post">
-    Nombre_Evento:
+    Nombre Evento:
     <input type="text" name="Evento">
     <br/><br/>
     <input type="submit" value="Buscar">
@@ -67,7 +79,7 @@
 
 
 
-  
+
   <h3 align="center">¿Quieres buscar todos los pokemones por tipo?</h3>
 
   <?php
