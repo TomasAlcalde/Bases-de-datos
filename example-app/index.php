@@ -37,6 +37,27 @@
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
+  
+  <?php
+  #Primero obtenemos todos los tipos de pokemones
+  require("config/conexion.php");
+  $result = $db -> prepare("SELECT * FROM Productoras;");
+  $result -> execute();
+  $dataCollected = $result -> fetchAll();
+  ?>
+    <form align="center" action="consultas/consulta3.php" method="post">
+      Seleccinar una productora:
+      <select name="tipo">
+        <?php
+        #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
+        foreach ($dataCollected as $d) {
+          echo "<option value=$d[1]>$d[1]</option>";
+        }
+        ?>
+      </select>
+      <br><br>
+      <input type="submit" value="Buscar">
+    </form>
   <br>
   <br>
   <br>
@@ -77,7 +98,7 @@
   <br>
   
   <h3 align="center"> ¿Quieres ver el evento con más entradas vendidas?</h3>
-
+  
   <form align="center" action="consultas/consulta7.php" method="post">
     <br/>
     <input type="submit" value="Buscar">
@@ -87,27 +108,7 @@
   <br>
   <br>
 
-  <?php
-  #Primero obtenemos todos los tipos de pokemones
-  require("config/conexion.php");
-  $result = $db -> prepare("SELECT * FROM Productoras;");
-  $result -> execute();
-  $dataCollected = $result -> fetchAll();
-  ?>
 
-  <form align="center" action="consultas/consulta_3.php" method="post">
-    Seleccinar una productora:
-    <select name="tipo">
-      <?php
-      #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
-      foreach ($dataCollected as $d) {
-        echo "<option value=$d[1]>$d[1]</option>";
-      }
-      ?>
-    </select>
-    <br><br>
-    <input type="submit" value="Buscar">
-  </form>
 
   <br>
   <br>
