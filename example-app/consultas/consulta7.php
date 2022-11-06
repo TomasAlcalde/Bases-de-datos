@@ -6,7 +6,15 @@
   require("../config/conexion.php");
 
   #Se construye la consulta como un string
- 	$query = "SELECT e.Nombre, e.Recinto, e.Fecha_inicio, COUNT(art.id_artista) as Cantidad FROM Eventos as e, Canta_en as art WHERE e.id_evento = art.id_evento GROUP BY e.id_evento ORDER BY -COUNT(art.id_artista);";
+ 	$query = "SELECT E.Nombre
+     FROM Eventos as E
+     WHERE E.Nombre = (
+         SELECT Ent.Nombre_evento
+         FROM Entradas AS Ent
+         GROUP BY Ent.Nombre_evento
+         HAVING COUNT(Ent.id_entrada) >= ALL (SELECT Count(Ent2.id_entrada)
+         FROM Entradas AS Ent2
+         GROUP BY Ent2.Nombre_evento));";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
 	$result = $db -> prepare($query);
@@ -16,16 +24,13 @@
 
   <table>
     <tr>
-      <th>  Nombre  </th>
-      <th>  Recinto  </th>
-      <th>  Fecha inicio  </th>
-      <th>  Cantidad de artistas  </th>
+      <th>Nombre</th>
     </tr>
   
       <?php
         // echo $productoras;
         foreach ($productoras as $p) {
-          echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td></tr>";
+          echo "<tr><td>$p[0]</td></tr>";
       }
       ?>
       
