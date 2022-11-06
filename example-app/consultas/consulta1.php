@@ -23,7 +23,7 @@
   <table>
     <tr>
       <th style="width: 70%">Nombre</th>
-      <th>Altura</th>
+      <th style="width:70%">Altura</th>
     </tr>
   
       <?php
