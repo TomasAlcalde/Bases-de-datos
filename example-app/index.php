@@ -92,14 +92,14 @@
 
 
 
-  <h3 align="center">¿Quieres buscar todos los pokemones por tipo?</h3>
+  <!-- <h3 align="center">¿Quieres buscar todos los pokemones por tipo?</h3>
 
   <?php
   #Primero obtenemos todos los tipos de pokemones
-  require("config/conexion.php");
-  $result = $db -> prepare("SELECT * FROM eventos;");
-  $result -> execute();
-  $dataCollected = $result -> fetchAll();
+  #require("config/conexion.php");
+  #$result = $db -> prepare("SELECT * FROM eventos;");
+  #$result -> execute();
+  #$dataCollected = $result -> fetchAll();
   ?>
 
   <form align="center" action="consultas/consulta_tipo.php" method="post">
@@ -107,9 +107,9 @@
     <select name="tipo">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
-      foreach ($dataCollected as $d) {
-        echo "<option value=$d[0]>$d[0]</option>";
-      }
+      #foreach ($dataCollected as $d) {
+      #  echo "<option value=$d[0]>$d[0]</option>";
+      #}
       ?>
     </select>
     <br><br>
@@ -121,4 +121,4 @@
   <br>
   <br>
 </body>
-</html>
+</html> -->
