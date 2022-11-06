@@ -21,10 +21,6 @@
 </style>
 
   <table>
-    <colgroup>
-      <col span='1'
-      <col span='2' style="text-align: center">
-    </colgroup>
     <tr>
       <th style="width: 70%">Nombre</th>
       <th style="width:70%">Altura</th>
