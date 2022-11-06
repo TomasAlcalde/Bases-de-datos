@@ -39,7 +39,7 @@
   $dataCollected = $result -> fetchAll();
   ?>
     <form align="center" action="consultas/consulta3.php" method="post">
-      Seleccine una productora:
+      Seleccione una productora:
       <select name="Productora">
         <?php
         #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -58,7 +58,7 @@
   <h3 align="center"> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
 
     <form align="center" action="consultas/consulta4.php" method="post">
-      Seleccine una productora:
+      Seleccione una productora:
       <select name="Productora">
         <?php
         #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -79,12 +79,12 @@
   <?php
   #Primero obtenemos todos los tipos de pokemones
   require("config/conexion.php");
-  $result = $db -> prepare("SELECT * FROM Eventos ORDER BY Nombre_evento;");
+  $result = $db -> prepare("SELECT * FROM Eventos ORDER BY Nombre;");
   $result -> execute();
   $dataCollected = $result -> fetchAll();
   ?>
     <form align="center" action="consultas/consulta5.php" method="post">
-      Seleccine una productora:
+      Seleccione una productora:
       <select name="Evento">
         <?php
         #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
