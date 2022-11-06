@@ -6,10 +6,10 @@
   require("../config/conexion.php");
 
   #Se construye la consulta como un string
- 	$query = "SELECT e.Nombre, e.Recinto, e.Fecha_inicio, COUNT(art.id_artista) as Cantidad 
+ 	$query = "SELECT e.Nombre, e.Recinto, e.Fecha_inicio, COUNT(id_artista) as Cantidad 
               FROM Eventos as e LEFT OUTER JOIN Canta_en as art 
               ON e.id_evento = art.id_evento 
-              GROUP BY e.id_evento ORDER BY -COUNT(art.id_artista);";
+              GROUP BY e.id_evento ORDER BY -COUNT(id_artista);";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
 	$result = $db -> prepare($query);
