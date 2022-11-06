@@ -9,7 +9,7 @@
   $query = "SELECT E.nombre, E.recinto, E.Fecha_inicio, E.Fecha_termino
             FROM (SELECT E2.nombre, E2.recinto, E2.Fecha_inicio, E2.Fecha_termino
                   FROM Eventos as E2, Produce as pr, Productoras as P
-                  WHERE E.id_evento = pr.id_evento and P.id_productora = pr.id_productora and P.Nombre ilike '%$var%') as E
+                  WHERE E2.id_evento = pr.id_evento and P.id_productora = pr.id_productora and P.Nombre ilike '%$var%') as E
             WHERE E.Fecha_inicio >= ALL (
                   SELECT E3.Fecha_inicio
                   FROM Eventos as E3, Produce as pr, Productoras as P
