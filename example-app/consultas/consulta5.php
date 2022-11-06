@@ -7,9 +7,9 @@
 
   $var = $_POST["Evento"];
   $query = "SELECT Ent.Nombre_evento, SUM(Ing.precio)
-            FROM Entradas as Ent, Precios as Ing
-            WHERE Ent.Nombre_Evento = Ing.Nombre_Evento and Ent.categoria = Ing.categoria and Ent.tipo = Ing.tipo
-            GROUP BY Ent.Nombre_Evento ORDER BY -SUM(Ing.precio)
+            FROM Entradas as Ent LEFT OUTER JOIN Precios as Ing
+            ON Ent.Nombre_Evento = Ing.Nombre_Evento and Ent.categoria = Ing.categoria and Ent.tipo = Ing.tipo
+            GROUP BY Ent.Nombre_Evento
             HAVING $var ilike Ent.Nombre;";
   $result = $db -> prepare($query);
   $result -> execute();
