@@ -28,6 +28,17 @@
   <br>
   <br>
 
+  <h3 align="center"> ¿Quieres ver cuántos artistas se presentarán en cada evento?</h3>
+  
+  <form align="center" action="consultas/consulta6.php" method="post">
+    <br/>
+    <input type="submit" value="Buscar">
+  </form>
+  
+  <br>
+  <br>
+  <br>
+  
   <h3 align="center"> ¿Quieres ver el evento con más entradas vendidas?</h3>
 
   <form align="center" action="consultas/consulta7.php" method="post">
@@ -38,18 +49,6 @@
   <br>
   <br>
   <br>
-
-  <h3 align="center"> ¿Quieres ver cuántos artistas se presentarán en cada evento?</h3>
-
-  <form align="center" action="consultas/consulta6.php" method="post">
-    <br/>
-    <input type="submit" value="Buscar">
-  </form>
-  
-  <br>
-  <br>
-  <br>
-
 
 
 

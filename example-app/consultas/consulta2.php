@@ -6,7 +6,7 @@
   require("../config/conexion.php");
 
   #Se construye la consulta como un string
- 	$query = "SELECT P.Nombre, SUM(pe.id_evento/pe.id_evento) as Cantidad_eventos FROM Productoras as P, Produce as pe WHERE P.id_productora = pe.id_productora GROUP BY P.id_productora;";
+ 	$query = "SELECT P.Nombre, COUNT(id_evento) as Cantidad_eventos FROM Productoras as P, Produce as pe WHERE P.id_productora = pe.id_productora GROUP BY P.id_productora ORDER BY -COUNT(id_evento);";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
 	$result = $db -> prepare($query);
