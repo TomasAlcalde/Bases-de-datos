@@ -9,7 +9,8 @@
   $query = "SELECT Ent.Nombre_evento, SUM(Ing.precio)
             FROM Entradas as Ent, Precios as Ing
             WHERE Ent.Nombre_Evento = Ing.Nombre_Evento and Ent.categoria = Ing.categoria and Ent.tipo = Ing.tipo
-            GROUP BY Ent.Nombre_Evento ORDER BY -SUM(Ing.precio);";
+            GROUP BY Ent.Nombre_Evento ORDER BY -SUM(Ing.precio)
+            HAVING $var ilike Ent.Nombre;";
   $result = $db -> prepare($query);
   $result -> execute();
   $dataCollected = $result -> fetchAll(); #Obtiene todos los resultados de la consulta en forma de un arreglo
