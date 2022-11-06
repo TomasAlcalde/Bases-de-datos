@@ -37,7 +37,7 @@
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
-  
+
   <?php
   #Primero obtenemos todos los tipos de pokemones
   require("config/conexion.php");
@@ -47,7 +47,7 @@
   ?>
     <form align="center" action="consultas/consulta3.php" method="post">
       Seleccinar una productora:
-      <select name="tipo">
+      <select name="Productora">
         <?php
         #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
         foreach ($dataCollected as $d) {
