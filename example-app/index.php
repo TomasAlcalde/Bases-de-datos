@@ -16,14 +16,27 @@
   <br>
   <br>
   <br>
+  
 
   <h3 align="center"> ¿Quieres ver cuántos eventos hizo cada productora?</h3>
-
+  
   <form align="center" action="consultas/consulta2.php" method="post">
     <br/>
     <input type="submit" value="Buscar">
   </form>
   
+  <br>
+  <br>
+  <br>
+
+  <h3 align="center"> ¿Ver cuántos fueron los ingresos de un evento?</h3>
+
+  <form align="center" action="consultas/consulta5.php" method="post">
+    Nombre_Evento:
+    <input type="text" name="Evento">
+    <br/><br/>
+    <input type="submit" value="Buscar">
+  </form>
   <br>
   <br>
   <br>
@@ -54,19 +67,7 @@
 
 
 
-
-  <h3 align="center"> ¿Quieres conocer los Pokemones más altos que: ?</h3>
-
-  <form align="center" action="consultas/consulta_altura.php" method="post">
-    Altura Mínima:
-    <input type="text" name="altura">
-    <br/><br/>
-    <input type="submit" value="Buscar">
-  </form>
-  <br>
-  <br>
-  <br>
-
+  
   <h3 align="center">¿Quieres buscar todos los pokemones por tipo?</h3>
 
   <?php
