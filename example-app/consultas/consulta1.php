@@ -6,7 +6,7 @@
   require("../config/conexion.php");
 
   #Se construye la consulta como un string
- 	$query = "SELECT Prod.Nombre, Info.Telefono FROM Info_Productoras as Info, Productoras as Prod WHERE Info.id_productora = Prod.id_productora;";
+ 	$query = "SELECT Prod.Nombre, Info.Telefono FROM Info_Productoras as Info LEFT OUTER JOIN Productoras as Prod ON Info.id_productora = Prod.id_productora;";
 
   #Se prepara y ejecuta la consulta. Se obtienen TODOS los resultados
 	$result = $db -> prepare($query);
