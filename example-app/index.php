@@ -31,7 +31,7 @@
 
   <h3 align="center"> ¿Quieres ver el último evento de una productora?</h3>
 
-  <form align="center" action="consultas/consulta5.php" method="post">
+  <form align="center" action="consultas/consulta3.php" method="post">
     Nombre Productora:
     <input type="text" name="Productora">
     <br/><br/>

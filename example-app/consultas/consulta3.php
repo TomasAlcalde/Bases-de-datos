@@ -22,11 +22,13 @@
   <table>
     <tr>
       <th>  Nombre evento  </th>
-      <th>  Ingresos por venta de entradas  </th>
+      <th>  Recinto  </th>
+      <th>  Fecha inicio  </th>
+      <th>  Fecha término  </th>
     </tr>
   <?php
   foreach ($dataCollected as $p) {
-    echo "<tr> <td>$p[0]</td> <td>$p[1]</td></tr>";
+    echo "<tr> <td>$p[0]</td> <td>$p[1]</td> <td>$p[2]</td> <td>$p[3]</td> </tr>";
   }
   ?>
   </table>
