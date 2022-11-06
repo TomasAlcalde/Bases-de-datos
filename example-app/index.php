@@ -28,6 +28,23 @@
   <br>
   <br>
 
+  <h3 align="center"> ¿Quieres ver cuántos artistas se presentarán en cada evento?</h3>
+
+  <form align="center" action="consultas/consulta6.php" method="post">
+    <br/>
+    <input type="submit" value="Buscar">
+  </form>
+  
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
   <h3 align="center"> ¿Quieres conocer los Pokemones más altos que: ?</h3>
 
   <form align="center" action="consultas/consulta_altura.php" method="post">
