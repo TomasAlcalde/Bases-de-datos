@@ -6,11 +6,12 @@
   require("../config/conexion.php"); #Llama a conexión, crea el objeto PDO y obtiene la variable $db
 
   $var = $_POST["Evento"];
+  echo "$var";
   $query = "SELECT Ent.Nombre_evento, SUM(Ing.precio)
             FROM Entradas as Ent LEFT OUTER JOIN Precios as Ing
             ON Ent.Nombre_Evento = Ing.Nombre_Evento and Ent.categoria = Ing.categoria and Ent.tipo = Ing.tipo
             GROUP BY Ent.Nombre_Evento
-            HAVING $var ilike Ent.Nombre_Evento;";
+            HAVING 'Le Reve' ilike Ent.Nombre_evento;";
   $result = $db -> prepare($query);
   $result -> execute();
   $dataCollected = $result -> fetchAll(); #Obtiene todos los resultados de la consulta en forma de un arreglo
