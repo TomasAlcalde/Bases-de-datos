@@ -18,6 +18,10 @@
 	$result -> execute();
 	$productoras = $result -> fetchAll();
   ?>
+<style>
+  table, th, td {border:1px solid black;}
+  tr:nth-child(even) {background-color: #D6EEEE;}
+</style>
 
   <table>
     <tr>
