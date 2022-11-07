@@ -1,8 +1,10 @@
 <?php include('templates/header.html');   ?>
 
 <body>
+<div class="container-fluid p-5 bg-primary text-white text-center">
   <h1 align="center"> Eventos 22 </h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre los eventos disponibles.</p>
+  <p style="text-align:center;">Aquí podrás encontrar información sobre los eventos disponibles.</p> 
+</div>
 
   <br>
 
