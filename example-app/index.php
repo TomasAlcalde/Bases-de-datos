@@ -12,7 +12,7 @@
 
   <form align="center" action="consultas/consulta1.php" method="post">
     <br/>
-    <input type="submit" value="Buscar">
+    <input type="submit" class="btn btn-success" value="Submit Button">
   </form>
   
   <br>
@@ -24,7 +24,7 @@
   
   <form align="center" action="consultas/consulta2.php" method="post">
     <br/>
-    <input type="submit" value="Buscar">
+    <input type="submit" class="btn btn-success" value="Submit Button">
   </form>
   
   <br>
