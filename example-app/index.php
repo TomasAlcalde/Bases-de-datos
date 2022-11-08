@@ -7,7 +7,10 @@
       <div class="row bg-secondary text-white">
         <h2 align="center"> Consultas </h2>
       </div>
-      <h3 align="center"> ¿Quieres ver el nombre y contacto de las productoras?</h3>
+
+      <br>
+
+      <h3> ¿Quieres ver el nombre y contacto de las productoras?</h3>
       
       <form align="center" action="consultas/consulta1.php" method="post">
         <br/>
@@ -18,7 +21,7 @@
       <br>
       <br>
 
-      <h3 align="center"> ¿Quieres ver cuántos eventos hizo cada productora?</h3>
+      <h3> ¿Quieres ver cuántos eventos hizo cada productora?</h3>
   
       <form align="center" action="consultas/consulta2.php" method="post">
         <br/>
@@ -29,7 +32,7 @@
       <br>
       <br>
 
-      <h3 align="center"> ¿Quieres ver el último evento de una productora?</h3>
+      <h3> ¿Quieres ver el último evento de una productora?</h3>
       
       <?php
         #Primero obtenemos todos los tipos de pokemones
@@ -60,7 +63,7 @@
       <br>
       <br>
   
-      <h3 align="center"> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
+      <h3> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
     
       <form align="center" action="consultas/consulta4.php" method="post">
         Seleccione una productora:
@@ -83,7 +86,7 @@
       <br>
       <br>
     
-      <h3 align="center"> ¿Ver cuántos fueron los ingresos de un evento?</h3>
+      <h3> ¿Ver cuántos fueron los ingresos de un evento?</h3>
       
       <?php
         #Primero obtenemos todos los tipos de pokemones
@@ -115,7 +118,7 @@
       <br>
       <br>
       
-      <h3 align="center"> ¿Quieres ver cuántos artistas se presentarán en cada evento?</h3>
+      <h3> ¿Quieres ver cuántos artistas se presentarán en cada evento?</h3>
     
       <form align="center" action="consultas/consulta6.php" method="post">
         <br/>
@@ -127,7 +130,7 @@
       <br>
       <br>
       
-      <h3 align="center"> ¿Quieres ver el evento con más entradas vendidas?</h3>
+      <h3> ¿Quieres ver el evento con más entradas vendidas?</h3>
       
       <form align="center" action="consultas/consulta7.php" method="post">
         <br/>
@@ -139,7 +142,7 @@
       <br>
     </div>
 
-    <div class="col-sm-8"> 
+    <div class="col-sm-4"> 
       <div class="row bg-secondary text-white">
         <h2 align="center"> Datos </h2>
       </div>
