@@ -2,8 +2,6 @@
 
 <body>
 
-  <br>
-
   <h3 align="center"> ¿Quieres ver el nombre y contacto de las productoras?</h3>
 
   <form align="center" action="consultas/consulta1.php" method="post">

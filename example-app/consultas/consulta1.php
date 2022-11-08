@@ -20,11 +20,14 @@
   tr:nth-child(even) {background-color: #9e9e9e;}
 </style>
 
-  <table>
+  <table class="table table-hover table-bordered">
+    <thead class="table-success">
     <tr>
       <th style="width: 70%">Nombre</th>
       <th style="width:70%">Altura</th>
     </tr>
+    </thead>
+    <tbody>
   
       <?php
         // echo $productoras;
@@ -32,7 +35,7 @@
           echo "<tr><td>$p[0]</td><td>$p[1]</td></tr>";
       }
       ?>
-      
+    </tbody>
   </table>
 
 <?php include('../templates/footer.html'); ?>
