@@ -13,13 +13,7 @@
 	$result -> execute();
 	$productoras = $result -> fetchAll();
   ?>
-<style>
-  table, th, td {border:1px solid black;}
-  th{text-align: center;}
-  td{text-align: left;}
-  tr:nth-child(even) {background-color: #9e9e9e;}
-</style>
-
+  <div class="container">
   <table class="table table-hover table-bordered">
     <thead class="table-success">
     <tr>
@@ -37,5 +31,6 @@
       ?>
     </tbody>
   </table>
+    </div>
 
 <?php include('../templates/footer.html'); ?>

@@ -2,6 +2,12 @@
 
 <body>
 
+<div class="row">
+  
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+</div>
+
   <h3 align="center"> ¿Quieres ver el nombre y contacto de las productoras?</h3>
 
   <form align="center" action="consultas/consulta1.php" method="post">
