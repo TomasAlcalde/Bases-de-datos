@@ -4,6 +4,7 @@
   <img class="card-img-top" src="img/concierto.jpg"">
   <div class="row">
       <div class="row bg-secondary text-white">
+        <br>
         <h2 align="center"> Consultas </h2>
       </div>
 
