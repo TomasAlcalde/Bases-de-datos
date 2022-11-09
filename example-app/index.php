@@ -46,7 +46,7 @@
   
         <form align="center" action="consultas/consulta3.php" method="post">
 
-          <select class="form-select" name="Productora">
+          <select class="form-select" name="Productora" style="width:400px">
             <option selected>Seleccione una productora</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -70,7 +70,7 @@
     
         <form align="center" action="consultas/consulta4.php" method="post">
           
-          <select class="form-select" name="Productora">
+          <select class="form-select" name="Productora" style="width:400px">
             <option selected>Seleccione una productora</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -102,7 +102,7 @@
     
         <form align="center" action="consultas/consulta5.php" method="post">
         
-          <select class="form-select" name="Evento">
+          <select class="form-select" name="Evento" style="width:400px">
             <option selected>Seleccione un evento</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>

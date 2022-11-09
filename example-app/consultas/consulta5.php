@@ -1,7 +1,7 @@
 <?php include('../templates/header.html');   ?>
 
 <body>
-
+<br>
   <?php
   require("../config/conexion.php"); #Llama a conexión, crea el objeto PDO y obtiene la variable $db
 
