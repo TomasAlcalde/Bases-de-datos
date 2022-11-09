@@ -44,8 +44,9 @@
         ?>
   
         <form align="center" action="consultas/consulta3.php" method="post">
-          Seleccione una productora:
-          <select name="Productora">
+
+          <select class="form-select" name="Productora">
+            <option selected>Seleccione una productora</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
               foreach ($dataCollected as $d) {
