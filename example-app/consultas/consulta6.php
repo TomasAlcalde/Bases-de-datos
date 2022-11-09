@@ -16,28 +16,25 @@
 	$result -> execute();
 	$productoras = $result -> fetchAll();
   ?>
-<style>
-  table, th, td {border:1px solid black;}
-  th{text-align: center;}
-  td{text-align: left;}
-  tr:nth-child(even) {background-color: #9e9e9e;}
-</style>
 
-  <table>
+<div class="container">
+  <table class="table table-hover table-bordered">
+    <thead class="table-success">
     <tr>
       <th>  Nombre  </th>
       <th>  Recinto  </th>
       <th>  Fecha inicio  </th>
       <th>  Cantidad de artistas  </th>
     </tr>
-  
+    </thead>
+    <tbody>
       <?php
         // echo $productoras;
         foreach ($productoras as $p) {
           echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>$p[3]</td></tr>";
       }
       ?>
-      
+      </tbody>
   </table>
 
 <?php include('../templates/footer.html'); ?>

@@ -14,23 +14,22 @@
   $result -> execute();
   $dataCollected = $result -> fetchAll(); #Obtiene todos los resultados de la consulta en forma de un arreglo
   ?>
-<style>
-  table, th, td {border:1px solid black;}
-  th{text-align: center;}
-  td{text-align: left;}
-  tr:nth-child(even) {background-color: #9e9e9e;}
-</style>
 
-  <table>
+<div class="container">
+  <table class="table table-hover table-bordered">
+    <thead class="table-success">
     <tr>
       <th>  Nombre evento  </th>
       <th>  Ingresos por venta de entradas  </th>
     </tr>
+    </thead>
+    <tbody>
   <?php
   foreach ($dataCollected as $p) {
     echo "<tr> <td>$p[0]</td> <td>$p[1]</td></tr>";
   }
   ?>
+  </tbody>
   </table>
 
 <?php include('../templates/footer.html'); ?>
