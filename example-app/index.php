@@ -1,6 +1,7 @@
 <?php include('templates/header.html');   ?>
 
 <body>
+  <img class="card-img-top" src="img/concierto.jpg"">
   <div class="row">
       <div class="row bg-secondary text-white">
         <h2 align="center"> Consultas </h2>
@@ -10,18 +11,7 @@
 
       <div class="container">
 
-        <div align="center" class="card">
-          <img class="card-img-top" src="img/productora.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Consulta 1</h4>
-            <p class="card-text">¿Quieres ver el nombre y contacto de las productoras?</p>
-            <form align="center" action="consultas/consulta1.php" method="post">
-              <br/>
-              <input type="submit" class="btn btn-success" value="Buscar">
-            </form>
-          </div>
-        </div>
-
+        
         <h3> ¿Quieres ver el nombre y contacto de las productoras?</h3>
       
         <form align="center" action="consultas/consulta1.php" method="post">
