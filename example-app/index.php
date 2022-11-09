@@ -2,8 +2,6 @@
 
 <body>
   <div class="row">
-    <div class="col-sm-8">
-      
       <div class="row bg-secondary text-white">
         <h2 align="center"> Consultas </h2>
       </div>
@@ -11,6 +9,19 @@
       <br>
 
       <div class="container">
+
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="img/productora.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Consulta 1</h4>
+            <p class="card-text">¿Quieres ver el nombre y contacto de las productoras?</p>
+            <form align="center" action="consultas/consulta1.php" method="post">
+              <br/>
+              <input type="submit" class="btn btn-success" value="Buscar">
+            </form>
+          </div>
+        </div>
+
         <h3> ¿Quieres ver el nombre y contacto de las productoras?</h3>
       
         <form align="center" action="consultas/consulta1.php" method="post">
@@ -68,8 +79,9 @@
         <h3> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
     
         <form align="center" action="consultas/consulta4.php" method="post">
-          Seleccione una productora:
-          <select name="Productora">
+          
+          <select class="form-select" name="Productora">
+            <option selected>Seleccione una productora</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
               foreach ($dataCollected as $d) {
@@ -99,8 +111,9 @@
         ?>
     
         <form align="center" action="consultas/consulta5.php" method="post">
-          Seleccione una productora:
-          <select name="Evento">
+        
+          <select class="form-select" name="Evento">
+            <option selected>Seleccione un evento</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
               foreach ($dataCollected as $d) {
@@ -142,14 +155,7 @@
         <br>
         <br>
         <br>
-      </div>
-    </div>  
 
-    <div class="col-sm-4"> 
-      <div class="row bg-secondary text-white">
-        <h2 align="center"> Datos </h2>
       </div>
-    </div>
-  
   </div>
 </body>
