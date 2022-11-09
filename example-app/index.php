@@ -12,7 +12,7 @@
       <div class="container">
 
         
-        <h3> ¿Quieres ver el nombre y contacto de las productoras?</h3>
+        <h3 align="center"> ¿Quieres ver el nombre y contacto de las productoras?</h3>
       
         <form align="center" action="consultas/consulta1.php" method="post">
           <br/>
@@ -23,7 +23,7 @@
         <br>
         <br>
 
-        <h3> ¿Quieres ver cuántos eventos hizo cada productora?</h3>
+        <h3 align="center"> ¿Quieres ver cuántos eventos hizo cada productora?</h3>
   
         <form align="center" action="consultas/consulta2.php" method="post">
           <br/>
@@ -34,7 +34,7 @@
         <br>
         <br>
 
-        <h3> ¿Quieres ver el último evento de una productora?</h3>
+        <h3 align="center"> ¿Quieres ver el último evento de una productora?</h3>
       
         <?php
           #Primero obtenemos todos los tipos de pokemones
@@ -46,7 +46,7 @@
   
         <form align="center" action="consultas/consulta3.php" method="post">
 
-          <select class="form-select" name="Productora" style="width:400px">
+          <select class="form-select" name="Productora" style="width:400px" align="center">
             <option selected>Seleccione una productora</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -66,11 +66,11 @@
         <br>
         <br>
   
-        <h3> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
+        <h3 align="center"> ¿Quieres ver los artistas que han trabajado con una productora?</h3>
     
         <form align="center" action="consultas/consulta4.php" method="post">
           
-          <select class="form-select" name="Productora" style="width:400px">
+          <select class="form-select" name="Productora" style="width:400px" align="center">
             <option selected>Seleccione una productora</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -90,7 +90,7 @@
         <br>
         <br>
     
-        <h3> ¿Ver cuántos fueron los ingresos de un evento?</h3>
+        <h3 align="center"> ¿Ver cuántos fueron los ingresos de un evento?</h3>
       
         <?php
           #Primero obtenemos todos los tipos de pokemones
@@ -102,7 +102,7 @@
     
         <form align="center" action="consultas/consulta5.php" method="post">
         
-          <select class="form-select" name="Evento" style="width:400px">
+          <select class="form-select" name="Evento" style="width:400px" align="center">
             <option selected>Seleccione un evento</option>
             <?php
               #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -123,7 +123,7 @@
         <br>
         <br>
       
-        <h3> ¿Quieres ver cuántos artistas se presentarán en cada evento?</h3>
+        <h3 align="center"> ¿Quieres ver cuántos artistas se presentarán en cada evento?</h3>
     
         <form align="center" action="consultas/consulta6.php" method="post">
           <br/>
