@@ -10,7 +10,7 @@
 
       <div class="container">
 
-        <div class="card" style="width:400px">
+        <div align="center" class="card">
           <img class="card-img-top" src="img/productora.jpg" alt="Card image">
           <div class="card-body">
             <h4 class="card-title">Consulta 1</h4>
